@@ -17,13 +17,21 @@
             height: 100vh;
             margin: 0;
         }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         .container {
             margin: 0 auto;
             max-width: 1000px;
-            padding: 0 1.5rem;
+            padding: 2rem;
         }
         .title{
             text-align: center;
+        }
+        ul{
+            margin: 5px 16px;
         }
     </style>
 </head>
@@ -32,6 +40,7 @@
     <div class="container">
         <h1 class="title">HelloWorld</h1>
         
+        <h3>Elenco Studenti:</h3>
         <ul>
             @foreach ($students as $student)
                 <li>
